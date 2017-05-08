@@ -1,0 +1,50 @@
+.snm-chatbot {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  height: 400px;
+  max-height: 90vw;
+  width: 300px;
+  z-index: 9000;
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
+  box-sizing: border-box;
+  border: 2px solid #000;
+
+  &:hover,
+  &:focus {
+    transform: translateY(99%);
+  }
+}
+
+.snm-chatbot-active,
+.snm-chatbot-active:hover,
+.snm-chatbot-active:focus {
+  transform: translateY(0);
+}
+
+.wc-chatview-panel.wc-chatview-panel {
+  overflow: visible;
+}
+
+.wc-header {
+  cursor: pointer;
+
+  &::before {
+    content: 'Ahoj, tady Lev!';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 130px;
+    padding: 0 10px;
+    text-align: center;
+    background: #e4121d;
+    box-sizing: border-box;
+  }
+}
+
+.snm-chatbot-active .wc-header::before {
+  content: 'Rozloučit se';
+}
