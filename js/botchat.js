@@ -15463,7 +15463,7 @@ var localizedStrings = {
         messageFailed: "nepodařilo se odeslat",
         messageSending: "posílám",
         timeSent: " v %1",
-        consolePlaceholder: "Napište zprávu…"
+        consolePlaceholder: "Nevíš co chceš? Zkus \"pomoc\"…"
     },
     'de-de': {
         title: "Chat",
