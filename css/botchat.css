@@ -25,7 +25,7 @@
 .wc-header {
   cursor: pointer; }
   .wc-header::before {
-    content: 'Ahoj, tady Lev!';
+    content: 'Roar! 🦁';
     position: absolute;
     bottom: 100%;
     right: 0;
