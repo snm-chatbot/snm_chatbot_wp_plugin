@@ -4,7 +4,7 @@
   right: 10px;
   bottom: 0;
   height: 400px;
-  max-height: 90vw;
+  max-height: 90vh;
   width: 300px;
   z-index: 9000;
   transform: translateY(100%);
@@ -341,7 +341,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-card {
   border: 1px solid #d2dde5;
   padding: 8px;
-  width: 302px; }
+  width: 192px; }
 
 .wc-wide .wc-card {
   border: 1px solid #d2dde5;
