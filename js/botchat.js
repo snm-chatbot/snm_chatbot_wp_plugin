@@ -15453,7 +15453,7 @@ exports.createStore = function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var localizedStrings = {
     'en-us': {
-        title: "Lev Manovich",
+        title: "lev Manovich",
         send: "Odeslat",
         unknownFile: "[Neznámý soubor '%1']",
         unknownCard: "[Neznámá karta '%1']",
