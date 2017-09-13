@@ -7,17 +7,28 @@
   max-height: 90vh;
   width: 300px;
   z-index: 9000;
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  -o-transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
-  box-sizing: border-box;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid #000; }
   .snm-chatbot:hover, .snm-chatbot:focus {
-    transform: translateY(99%); }
+    -webkit-transform: translateY(99%);
+        -ms-transform: translateY(99%);
+            transform: translateY(99%); }
 
 .snm-chatbot-active,
 .snm-chatbot-active:hover,
 .snm-chatbot-active:focus {
-  transform: translateY(0); }
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0); }
 
 .wc-chatview-panel.wc-chatview-panel {
   overflow: visible; }
@@ -35,7 +46,8 @@
     padding: 0 10px;
     text-align: center;
     background: #e4121d;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
 
 .snm-chatbot-active .wc-header::before {
   content: 'Rozloučit se'; }
@@ -52,6 +64,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   color: #fff;
   cursor: pointer;
   outline: none;
+  -webkit-transition: color .2s ease, background-color .2s ease;
+  -o-transition: color .2s ease, background-color .2s ease;
   transition: color .2s ease, background-color .2s ease; }
 
 .wc-app h1, .wc-app h2, .wc-app h3, .wc-app h4, .wc-app p, .wc-app ul, .wc-app ol {
@@ -67,8 +81,10 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-header {
   background-color: #000;
-  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
-  box-sizing: content-box;
+  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   color: #fff;
   font-weight: 500;
   height: 30px;
@@ -87,7 +103,9 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-message-groups {
   bottom: 50px;
   left: 0;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 10px;
@@ -95,7 +113,11 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   right: 0;
   top: 38px;
   background: #fff;
-  transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1); }
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.5, 1);
+  transition: -webkit-transform 0.2s cubic-bezier(0, 0, 0.5, 1);
+  -o-transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1);
+  transition: transform 0.2s cubic-bezier(0, 0, 0.5, 1), -webkit-transform 0.2s cubic-bezier(0, 0, 0.5, 1); }
 
 .wc-message-group-content {
   overflow: hidden; }
@@ -108,6 +130,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   overflow: hidden;
   position: absolute;
   right: 0;
+  -webkit-transition: height 0.2s cubic-bezier(0, 0, 0.5, 1);
+  -o-transition: height 0.2s cubic-bezier(0, 0, 0.5, 1);
   transition: height 0.2s cubic-bezier(0, 0, 0.5, 1); }
   .wc-suggested-actions .wc-hscroll > ul {
     height: 40px;
@@ -122,7 +146,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
         min-height: 32px;
         overflow: hidden;
         padding: 0 16px;
-        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
         white-space: nowrap;
         width: 100%; }
       .wc-suggested-actions .wc-hscroll > ul > li button:hover {
@@ -148,14 +173,18 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   .wc-suggested-actions button.scroll svg {
     fill: #fff; }
     .wc-suggested-actions button.scroll svg path {
-      transform: translateY(6px); }
+      -webkit-transform: translateY(6px);
+          -ms-transform: translateY(6px);
+              transform: translateY(6px); }
   .wc-suggested-actions button.scroll.previous {
     left: 0; }
   .wc-suggested-actions button.scroll.next {
     right: 0; }
 
 .wc-message-pane.show-actions .wc-message-groups {
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px); }
 
 .wc-message-pane.show-actions .wc-suggested-actions {
   height: 40px; }
@@ -164,7 +193,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   border: 5px solid #dbdee1;
   bottom: 0;
   background: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 50px;
   left: 0;
   position: absolute;
@@ -181,13 +211,24 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 /* messages */
 .wc-message-wrapper {
-  animation: animationFrames 2s;
-  animation-iteration-count: 1;
+  -webkit-animation: animationFrames 2s;
+          animation: animationFrames 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
   clear: both;
   margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   /*transition: max-height 2s ease-in-out;*/ }
+
+@-webkit-keyframes animationFrames {
+  0% {
+    /*max-height: 0;*/
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  100% {
+    /*max-height: 2000px;*/ } }
 
 @keyframes animationFrames {
   0% {
@@ -214,7 +255,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 
 .wc-message-content {
   border-radius: 2px;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
   padding: 8px;
   word-break: break-word; }
 
@@ -222,7 +264,8 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   cursor: pointer; }
 
 .wc-message-content.selected {
-  box-shadow: 0px 1px 1px 0px #ffa333; }
+  -webkit-box-shadow: 0px 1px 1px 0px #ffa333;
+          box-shadow: 0px 1px 1px 0px #ffa333; }
 
 .wc-message-content img {
   max-height: 320px;
@@ -503,16 +546,22 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-animate-scroll {
   left: 0;
   position: absolute;
+  -webkit-transition: left .8s ease;
+  -o-transition: left .8s ease;
   transition: left .8s ease; }
 
 .wc-animate-scroll-rapid {
   left: 0;
   position: absolute;
+  -webkit-transition: left .4s ease;
+  -o-transition: left .4s ease;
   transition: left .4s ease; }
 
 .wc-animate-scroll-near {
   left: 0;
   position: absolute;
+  -webkit-transition: left .3s ease-in-out;
+  -o-transition: left .3s ease-in-out;
   transition: left .3s ease-in-out; }
 
 /* text formats */
